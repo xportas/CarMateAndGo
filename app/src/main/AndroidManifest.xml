@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BlaBlaCar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ban.BanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activity_verify_otp"
+            android:exported="false" />
+        <activity
+            android:name=".activities.phone_register"
+            android:exported="false" />
+        <activity
+            android:name=".activities.chat.MainActivityChat"
+            android:exported="false" />
+        <activity
+            android:name=".activities.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profile.C02LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.search.ShowRatingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.history.RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.create.VehicleSetterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.history.UserTripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.search.TripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.search.SearchRoutes"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.login.LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".activities.login.MainScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.register.RegisterPassword"
+            android:exported="false" />
+        <activity
+            android:name=".activities.register.RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".activities.register.RegisterEmail"
+            android:exported="false" />
+        <activity
+            android:name=".activities.search.RouteFinderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.create.CreateRoute"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profile.BalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.seachInput.Search"
+            android:exported="false" />
+        <activity
+            android:name=".activities.create.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.chat.SearchUserActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCNuXS9NtmZ2-8Z7EGH3XPBtr6oWiCW3pU" />
+    </application>
+
+</manifest>
